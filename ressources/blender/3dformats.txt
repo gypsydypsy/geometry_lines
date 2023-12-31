@@ -1,0 +1,27 @@
+
+3D formats : 
+
+        - OBJ, FBX, PLY, COLLADA, 3DS, GLTF...
+        - GLTF is becoming the standard and covers most of our needs
+        - GLTF supports : geometries, materials, cameras, lights, scene graph, animations, skeletons, morphing...
+
+
+GLTF Formats : 
+
+        - GLTF : 
+            > Multiple files : .gltf (can be opened like json), .bin (binary), .png (textures), editable
+        
+        - GLTF binary : 
+            > Single files : .bin, contains all the data but not editable, usually lighter and fastest to load
+
+        - Draco GLTF : 
+            > Draco is a compression format, lighter than simple GLTF
+
+        - GLTF embed : 
+            > Single json file, but textures and buffer data are embedded in it, the heaviest
+
+   
+Which one to choose ? 
+        > Depends on what you want to do
+            > Editable or not ? 
+            > Lighter or heavier ?

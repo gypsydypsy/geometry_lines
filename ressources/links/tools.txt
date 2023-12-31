@@ -1,0 +1,28 @@
+// ----------- TEXTURES 
+
+https://3dtextures.me/
+https://www.arroway-textures.ch/
+https://www.poliigon.com/
+// Matcaps : https://github.com/nidorx/matcaps
+
+// ----------- CONVERTERS
+
+// Cubmaps : https://matheowis.github.io/HDRI-to-CubeMap/
+// Typefaces : http://gero3.github.io/facetype.js/
+
+// ----------- MODELS 
+
+https://github.com/KhronosGroup/glTF-Sample-Models
+
+// ----------- 3D EDITOR
+
+https://threejs.org/editor/
+
+// ------------ MATHS
+
+https://graphtoy.com/
+
+// ------------ GSAP EASE VISUALIZER
+
+https://greensock.com/docs/v3/Eases
+

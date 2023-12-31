@@ -1,0 +1,88 @@
+/!\ shortcuts are area sensitive / mode sensitive
+
+
+// VIEW CONTROL
+
+ORBIT ROTATE : ALT + LEFT CLICK (or middle mouse)
+MOUVE UP/DOWN LEFT/RIGHT : ALT + SHIFT + LEFT CLICK (or middle mouse + shift)
+ZOOM IN/OUT : scroll (mouse or trackpad)
+SWITCH FLY MODE / WALK MODE : EDIT > PREFERENCE > VIEW
+SWITCH ORTHOGRAPIC / PERSPECTIVE
+CENTER THE VIEW : SHIFT + C
+
+// OBJECT CONTROL
+
+FOCUS ON AN OBJECT : /
+UNSELECT AN OBJECT : SHIFT + CLICK
+SELECT EVERYTHING : A
+UNSELECT EVERYTHING : AA
+CREATE AN OBJECT : SHIFT + A 
+DELETE AN OBJECT : SELECT IT THEN PRESS X 
+OPEN THE OBJECT'S PANNEL : F9
+HIDE AN OBJECT : H
+UNHIDE EVERYTHING : SHIFT + H
+DUPLICATE OBJECT : SHIFT D
+
+// SHIFT MODE : 
+
+CTRL + TAB : change mode
+
+// OBJECT MODE
+
+MOVE OBJECT : G
+ROTATE OBJECT : R
+SCALE OBJECT : S
+THEN PRESS X, Y OR Z to apply the transformation on only one axis
+OR SHIFT + X Y OR Z to excluse one axis
+LEFT CLICK : SAVE CHANGE
+RIGHT CLICK : CANCEL
+
+// EDIT mode
+
+Switch between the 3 top icons to select vertex / edges / faces
+G R S to maniputale them
+
+// SHADING
+
+press Z to access shading modes : wireframe, solid, material preview, realistic render ....
+
+// PROPERTIES AREA 
+
+    - Object properties : more precise than tweeking in the 3D VIEW
+    
+    - Modifyers properties : apply non-destructive modifications
+    
+    - Material properties : default one is principled BSDF (physically based)
+    
+    - Scene properties : change the unit, enable gravity, etc...
+
+    - Renderer properties :
+        - default one : EVEE    => real time Renderer  
+                                => very performant but has some limitations
+       
+        - WORKBENCH             => legacy render engine
+                                => not used a lot, not very realistic
+       
+        - CYCLES                => Raytracing engine
+                                => very realistic, can recreate lightbounce etc...
+                                => very long too load, glitchy
+
+        Press F12 to do a render ! 
+
+// SEARCH
+
+F3 : open search pannel 
+
+// HOW TO EXPORT ?
+
+    1/ Select only the object you want to EXPORT
+    2/ File > export > gltf2
+    3/ Export settings : 
+        - Format : choose between binary/embeded/separated files
+        - Include : limite to selected objects, visible objects etc...
+        - Transform : makes the y axis the top axis (VERY USEFULL IN THREE JS)
+        - Geometry : choose if you wanna keep modifyers, UVs, normals, vertex colors...
+        - Compression : if selected, it will be the draco compression
+        - Animation : enable them or not
+
+
