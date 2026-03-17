@@ -1,8 +1,6 @@
 import './style.css'
 import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import GUI from 'lil-gui'
-import gsap from 'gsap';
 import vertex from '../shaders/vertexShader.glsl';
 import fragment from '../shaders/fragmentShader.glsl';
 
@@ -54,8 +52,6 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setSize( sizes.width, sizes.height );
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
-const controls = new OrbitControls(camera, canvas);
-
 // -- Clock
 const clock = new THREE.Clock();
 
@@ -82,25 +78,25 @@ const material = new THREE.ShaderMaterial({
       value : [cursor.x, cursor.y]
     }, 
     u_nthShapes: {
-      value: 25
+      value: 30
     }, 
     u_nthSides: {
       value: 3
     }, 
     u_rotation: {
-      value: 0.
+      value: 0.005
     }, 
     u_thickness: {
-      value: 0.004
+      value: 0.007
     },
     u_size: {
-      value: 0.2
+      value: 0.08
     },
     u_color1 : {
-      value: new THREE.Color(0xfe10d2)
+      value: new THREE.Color(0x810404)
     },
     u_color2 : {
-      value: new THREE.Color(0x9937fb)
+      value: new THREE.Color(0x0a1510)
     }
   }
 })
@@ -116,10 +112,7 @@ scene.add(mesh);
 */
 
 const render = () => 
-{  
-  // update controls
-  controls.update();
-
+{   
   // update uniforms
   material.uniforms.u_time.value = clock.getElapsedTime();  
   
